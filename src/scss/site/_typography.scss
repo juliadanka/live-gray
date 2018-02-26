@@ -1,0 +1,81 @@
+//Typography
+:focus {
+  outline: none;
+}
+
+body {
+  @media #{$small-only} {
+    font-size: rem-calc(14);
+  }
+}
+
+h3 {
+  line-height: (50/34);
+  margin: 0 0 rem-calc(22);;
+}
+
+blockquote {
+  font-size: rem-calc(24);
+  line-height: (40/24);
+  margin-bottom: rem-calc(27);
+  @media #{$small-only} {
+    font-size: inherit;
+  }
+}
+
+cite {
+  font-style: normal;
+}
+
+a {
+  transition: color 0.25s ease-out;
+}
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.button.large {
+  padding: rem-calc(17) rem-calc(20);
+}
+
+.button.small {
+  padding: rem-calc(9) rem-calc(21);
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+.bypostauthor,
+.gallery-caption,
+.wp-caption,
+.wp-caption-text {
+  font-size: rem-calc(14);
+}
+
+.sticky {
+  margin: 0;
+}
+
+
+.alignright {
+  float: right
+}
+
+.alignleft {
+  float: left
+}
+
+.aligncenter {
+  margin: 0 auto
+}

@@ -1,0 +1,43 @@
+// Site footer
+.site-footer {
+  padding: rem-calc(63) 0 rem-calc(48);
+  color: #313131;
+  font-family: $header-font-family;
+  font-size: rem-calc(12);
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  @media #{$large-up} {
+    text-align: left;
+  }
+  a {
+    color: inherit;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .social-list {
+    text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .medium-4:first-child,
+  .medium-4:last-child {
+    padding-left: 0;
+  }
+
+}
+
+.site-info {
+  margin-bottom: rem-calc(11);
+  @media #{$large-up} {
+    margin-left: rem-calc(-20);
+    text-align: right;
+
+  }
+  .sep {
+    margin: 0 rem-calc(13);
+  }
+}

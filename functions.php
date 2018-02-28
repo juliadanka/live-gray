@@ -60,6 +60,13 @@ if (!function_exists('live_gray_setup')) :
             'gallery',
             'caption',
         ));
+        /*
+		 * Enable support for Post Thumbnails on posts and pages.
+		 *
+		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+		 */
+        add_theme_support( 'post-thumbnails' );
+        set_post_thumbnail_size( 966 );
 
         add_editor_style(array('css/editor-style.css', live_gray_fonts_url()));
     }
